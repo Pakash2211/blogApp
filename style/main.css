@@ -1,0 +1,207 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Suisse", "Apercu", "Segoe UI", "Roboto", "Ubuntu", "Cantarell";
+   
+}
+
+body{
+    background-color: rgb(225, 238, 253);
+}
+/* <--------------navbar---------------> */
+
+
+#navbar{
+    background-color: rgb(18, 153, 220);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+#navbar a{
+   color: aliceblue;
+   font-size: 23px;
+   cursor: pointer;
+   text-decoration: none;
+}
+#navbar a:hover{
+    color:black;
+    cursor: pointer;
+}
+
+
+
+/* <----------navbar---end------------> */
+
+/* <--------------------mainpage--------------------> */
+
+.search_blog{
+    margin:30px  0px 30px 30px;
+    outline: none;
+    border: none;
+    background-color:rgb(225, 238, 253);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 5px 0px;
+    width: 20%;
+}
+
+
+#blogtable{
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:37px;
+    
+    
+}
+#blogtable > div{
+    padding: 13px;
+    background-color: #ffff;
+    transition: box-shadow 0.5s;
+}
+#blogtable > div:hover{
+    box-shadow: -0.5rem 0.5rem rgb(8, 5, 37);
+    cursor: pointer;
+}
+
+#blogtable > div > div:first-child{
+    border-bottom: 2px solid rgb(8, 5, 37);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px 4px;
+}
+#blogtable img{
+    height: 28px;
+    cursor: pointer;
+    margin-left:15px;
+}
+#blogtable > div > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+
+#blogtable > div > div:nth-child(3){
+    word-wrap: break-word;
+    height: 150px;
+    overflow:hidden;
+    padding: 4px;
+    margin: 10px 0px;
+}
+#blogtable > div > div:nth-child(4){
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#blogtable h3{
+    font-size: 23px;
+}
+
+/* <------------------------- view-page---------------------------> */
+
+#showblog{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 18px;
+}
+#showblog > div{
+    padding: 40px;
+    background-color: #ffff;
+    /* transition: box-shadow 0.5s; */
+}
+
+
+#showblog > div > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+#showblog > div > div:nth-child(2){
+    word-wrap: break-word;
+    margin: 15px 0px;
+}
+#showblog > div > div:nth-child(3){
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#showblog h3{
+    font-size: 28px;
+}
+
+/* <-------------- create a blog ------------------> */
+
+.uppart + h1{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#blogform{
+    background-color: #ffff;
+    width: 35%;
+    margin: auto;
+    padding: 5px;
+}
+.Createupper{
+    padding: 10px;
+}
+.title_blog{
+    width: 100%;
+    padding:4px;
+}
+
+.bodypart{
+  
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+.textarea_blog{
+    display: block;
+    margin: auto;
+}
+.Createlower{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:5px 10px;
+}
+.author_blog, .Category_blog{
+    padding: 4px;
+    width: 40%;
+} 
+
+section{
+    width: 50%;
+}
+.Createlower_tags{
+    padding: 4px 10px;
+}
+.tags_blog{
+    padding: 4px;
+    width: 40%;
+}
+.btn{
+    display: block;
+    padding: 6px;
+    width: 96%;
+    margin: 20px auto;
+    background-color:rgb(51, 51, 250);
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color:rgb(0, 0, 255);
+    color: black;
+    cursor: pointer;
+}
