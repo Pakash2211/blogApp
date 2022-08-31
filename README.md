@@ -1,4 +1,4 @@
-# blogApp
+<h1>blogApp</h1>
 
 <h2>A Solo project built by me within 1 day.</h2>
 <br>
