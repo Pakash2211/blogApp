@@ -23,7 +23,7 @@
 
 Start the server
 ```bash
-  json-server --watch db.json
+  json-server --watch db2.json
 ```
 
 ## Screenshots
